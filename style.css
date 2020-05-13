@@ -344,8 +344,8 @@ header button:hover {
         position: absolute;
         top: 10vh;
         right: 0;
-        width: 70%;
-        height: 80%;
+        width: 40%;
+        height: 65%;
         display: flex;
         background-color: rgba(0, 0, 0, 0.85);
         flex-direction: column;
@@ -360,6 +360,11 @@ header button:hover {
     header p {font-size: 18px;}
     header button {padding: 6px; font-size: 12px;}
 }
+@media screen and (max-width: 500px) {
+    .nav-links {
+        width: 60%;
+    }
+}        
 .nav-active {transform: translateX(0%);}
 @keyframes navLinkFade {
     from {
@@ -388,6 +393,12 @@ header button:hover {
     }
     #services .items {
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 450px) {
+    #services .item .fa {
+        font-size: 30px;
+        padding: 15px;
     }
 }
 /*STORY*/
